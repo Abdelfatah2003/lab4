@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        h1{
+            color: black;
+            text-shadow: 0 0 10px yellow;
+            text-align: center;
+            color:yellow;
+        }
+        h2{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+        margin-right: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>thank you for signing up </h1>
+     <h2> can select courses from the following lest</h2>
+    <table border="3">
+        <thead>
+            <tr>
+            <th colspan="3">coursis</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cours name</td>
+                <td>instructor</td>
+                <td>cours link</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>tasneem</td>
+                <td> <a href="math.html">link</a></td>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td rowspan="2">sara</td>
+                <td><a href="">link</a></td>
+            </tr>
+            <tr>
+                <td>computer</td>
+                <td><a href="">link</a></td>
+            </tr>
+            <tr>
+                <td>english</td>
+                <td>mohammed</td>
+                <td><a href="">link</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script>
+        let rating = prompt("Rate my website from 1 to 5");
+   rating = parseInt(rating);
+
+   const hamodh = '<img src="download.jpg" width="20%" height="20%">';
+
+   for (let i = 1; i <= rating; i++) {
+    if (i<6)
+     document.write(hamodh);
+     else
+     break
+   }
+   </script>
+</body>
+</html>
